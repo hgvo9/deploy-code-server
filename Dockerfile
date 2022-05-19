@@ -32,7 +32,7 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # Copy files: 
 # COPY deploy-container/myTool /home/coder/myTool
 
-RUN sudo apt-get install wget vim
+RUN sudo apt-get install wget vim -y
 
 # -----------
 
