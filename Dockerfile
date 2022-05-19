@@ -1,5 +1,5 @@
 # Start from the code-server Debian base image
-FROM codercom/code-server:4.0.2
+FROM codercom/code-server:latest
 
 USER coder
 
@@ -31,6 +31,8 @@ RUN sudo chown -R coder:coder /home/coder/.local
 
 # Copy files: 
 # COPY deploy-container/myTool /home/coder/myTool
+
+RUN sudo apt-get install wget
 
 # -----------
 
